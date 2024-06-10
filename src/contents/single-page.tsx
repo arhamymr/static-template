@@ -4,7 +4,7 @@ import Hero from '@/components/hero';
 import React from 'react';
 import VisiMisi from '@/components/visi-misi';
 import Services from '@/components/services';
-import Whyus from '@/components/whyus';
+import Description from '@/components/description';
 import Footer from '@/components/footer';
 import QR from '@/components/qr';
 import Map from '@/components/map';
@@ -12,7 +12,7 @@ import Testimoni from '@/components/testimoni';
 import Legalitas from '@/components/legalitas';
 
 const BlueBackground = ({ children }: { children: React.ReactNode }) => (
-  <Box mt={100} bg="brand.900" color={'white'}>
+  <Box mt={100} bg="brand.500" color={'white'}>
     {children}
   </Box>
 );
@@ -21,33 +21,17 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <Container maxW="container.lg">
-        <Hero />
-      </Container>
-
-      <Divider />
-
-      {/* WHY US*/}
-      <Container maxW="container.lg">
-        <Whyus />
-      </Container>
-
-      {/* VISI MISI */}
-      <BlueBackground>
-        <Container maxW="container.lg">
-          <VisiMisi />
-        </Container>
-      </BlueBackground>
+      <Hero />
 
       {/* SERVICES */}
       <Container maxW="container.lg">
         <Services />
       </Container>
 
-      {/* QR SEction*/}
+      {/* VISI MISI */}
       <BlueBackground>
         <Container maxW="container.lg">
-          <QR />
+          <VisiMisi />
         </Container>
       </BlueBackground>
 
@@ -61,11 +45,6 @@ export default function Home() {
       {/* GALLERY */}
       <Container maxW="container.lg">
         <Gallery />
-      </Container>
-
-      {/* LEGALITAS */}
-      <Container maxW="container.lg">
-        <Legalitas />
       </Container>
 
       <Divider />

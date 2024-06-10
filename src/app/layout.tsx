@@ -3,9 +3,9 @@ import { Providers } from './providers';
 import Navbar from '@/components/navbar';
 
 export const metadata: Metadata = {
-  title: 'Anugrah Teknologi',
+  title: 'Wastewater Management Service',
   description:
-    'Perusahaan yang bergerak dibidang pengadaan barang dan jasa, seperti Perlengkapan komputer dan laptop, CCTV, AC, dan lainnya. Perusahaan ini berdiri sejak 2013 hingga sekarang. Dengan berjalannya waktu,vperusahaan ini  menerapkan budaya kerja jujur, disiplin, bertanggung jawab, kerja sama, terbuka, serta loyal',
+    'Kami adalah perusahaan yang Khusus menangani Pengolahan Airvlimbah, di mana telah di terangkan dalam Akta pendirian perusahaan kategori bidang usaha yang di jalankanvsebagai General contraktor (Mekanikal Eliktrikal), Treatment Air, Treatment Air limbah dan Produsen pembuatan Fibergalss sekaligus perusahaan yangvmelakukan perdagangan produk Septictank, IPAL,STP, WTP dan bahan bahan fiber lainnya.',
 };
 
 export default function RootLayout({

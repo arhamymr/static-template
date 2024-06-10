@@ -1,5 +1,14 @@
 import React from 'react';
-import { Box, Flex, Center, Text, Image, Divider } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Text,
+  Image,
+  HStack,
+  Spacer,
+  Container,
+  Button,
+} from '@chakra-ui/react';
 
 const Item = ({ label }: { label: string }) => (
   <Box>
@@ -9,7 +18,6 @@ const Item = ({ label }: { label: string }) => (
       py={2}
       rounded={'lg'}
       fontSize={'lg'}
-      fontWeight={'bold'}
       color="brand.900"
     >
       {label}
@@ -19,44 +27,42 @@ const Item = ({ label }: { label: string }) => (
 
 const Navbar: React.FC = () => {
   return (
-    <>
-      <Box>
-        <Center>
-          <Center p={6} flexDirection={'column'} gap={8}>
-            <Image src="/assets/logo-black.png" alt="Logo" width={110} />
-          </Center>
-        </Center>
-      </Box>
-      <Center
-        bg="white"
-        mb={{ base: 20, md: 100 }}
-        position="sticky"
-        top="-1"
-        flexDirection={'column'}
-        zIndex={999}
-      >
-        <Flex
-          justifyContent={'center'}
-          flexWrap={'wrap'}
-          gap={{ base: 0, md: 6 }}
-          p={4}
-        >
-          <a href="#layanan">
-            <Item label="Layanan" />
-          </a>
-          <a href="#galeri">
-            <Item label="Galeri" />
-          </a>
-          <a href="#legalitas">
-            <Item label="Legalitas" />
-          </a>
-          <a href="#testimoni">
-            <Item label="Testimoni" />
-          </a>
-        </Flex>
-        <Divider />
-      </Center>
-    </>
+    <Box
+      zIndex={9999}
+      position={'sticky'}
+      top={'0'}
+      boxShadow={'md'}
+      bg="white"
+      w="full"
+    >
+      <Container maxW="container.xl">
+        <HStack alignItems={'center'} justifyContent={'center'}>
+          <Box>
+            <Image src="/logo.png" alt="Logo" width={110} />
+          </Box>
+          <Spacer />
+          <Flex
+            justifyContent={'center'}
+            flexWrap={'nowrap'}
+            gap={{ base: 0, md: 6 }}
+            p={4}
+            color="brand.500"
+          >
+            <a href="#layanan">
+              <Item label="Layanan" />
+            </a>
+            <a href="#kontak">
+              <Item label="Kontak" />
+            </a>
+
+            <a href="#testimoni">
+              <Item label="Testimoni" />
+            </a>
+          </Flex>
+          <Button> Hubungi Kami </Button>
+        </HStack>
+      </Container>
+    </Box>
   );
 };
 

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Box, Text, Flex } from '@chakra-ui/react';
+import { Box, Text, Flex, Button } from '@chakra-ui/react';
 import { FaMap } from 'react-icons/fa';
 
 const MapEmbed = ({ location }: { location: string }) => {
@@ -24,19 +24,12 @@ const MapEmbed = ({ location }: { location: string }) => {
 
 const datacontent = [
   {
-    title: 'Cabang 1',
+    title: 'Alamat Kantor',
     address:
-      'Jl. Poros Sengkang, Tanrutedong, Sidenreng Rappang, Sulawesi Selatan',
+      'Jl Pengayoman No. 11 Ruko mirah 2 Hotel Al-Badar Lt 5/502, Makassar',
     embed:
-      'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.417657319642!2d120.0058706!3d-3.8946333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95d1f4bdfdef01%3A0x6bedd4f01f9d9aa8!2sAnugrah%20computer%20%26%20CCTV!5e0!3m2!1sid!2sid!4v1714226978315!5m2!1sid!2sid',
-    link: 'https://www.google.com/maps?ll=-3.89412,120.005871&z=15&t=m&hl=id&gl=ID&mapclient=embed&cid=7777106259326376616',
-  },
-  {
-    title: 'Cabang 2',
-    address: 'Jl. Ganggawa, Pangkajene, Sidenreng Rappang, Sulawesi Selatan',
-    embed:
-      'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15921.947471527088!2d119.7916667!3d-3.9194071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95c917d6e6338f%3A0x8a88be6ea4574462!2sAnugrah%20Computer%20dan%20CCTV%20Pangkajene%20Sidrap!5e0!3m2!1sid!2sid!4v1714315028378!5m2!1sid!2sid',
-    link: 'https://www.google.com/maps/place/Anugrah+Computer+dan+CCTV+Pangkajene+Sidrap/@-3.9194071,119.7916667,15z/data=!4m6!3m5!1s0x2d95c917d6e6338f:0x8a88be6ea4574462!8m2!3d-3.9194071!4d119.7916667!16s%2Fg%2F11q2651y6k?hl=id&entry=ttu',
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4399.5111967658295!2d119.44713803710434!3d-5.160287082530178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2bf897fcbcf%3A0xec700d8e5081bda8!2sAl-Badar%20Hotel%20Syariah%20Makassar!5e0!3m2!1sid!2sid!4v1718027173024!5m2!1sid!2sid',
+    link: 'https://maps.app.goo.gl/N3RaCGsQ7JGig4fGA',
   },
 ];
 
@@ -71,22 +64,7 @@ const MapItem = ({
           {address}
         </Text>
         <a href={link} target="_blank">
-          <Flex
-            px="3"
-            py="2"
-            gap={2}
-            color={'white'}
-            alignItems={'center'}
-            rounded={'lg'}
-            w={300}
-            justifyContent={'center'}
-            fontSize={'lg'}
-            fontWeight={'bold'}
-            bg="linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)"
-          >
-            <FaMap />
-            <Text>Buka Google Map</Text>
-          </Flex>
+          <Button leftIcon={<FaMap />}>Buka Google Map</Button>
         </a>
       </Box>
 

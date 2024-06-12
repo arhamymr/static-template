@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           maxW="container.xl"
         >
           <Box flex={1} color={'brand.500'}>
-            <Heading as="h1" size="xl" mb={1}>
+            <Heading mt={{ base: '80px', md: 0 }} as="h1" size="xl" mb={1}>
               Selamat Datang di <br /> PT. Wastewater Management Service
             </Heading>
             <Text fontSize={'xl'}>

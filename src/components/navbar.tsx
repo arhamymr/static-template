@@ -36,6 +36,8 @@ function Navigation() {
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
           display={{ base: 'flex', md: 'none' }}
+          justify={'center'}
+          alignItems={'center'}
         >
           <IconButton
             onClick={onToggle}
@@ -45,7 +47,7 @@ function Navigation() {
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
           />
-          <Image src="/logo.png" alt="logo" maxW={150} />
+          <Image src="/logo.png" alt="logo" h={30} w={60} />
         </Flex>
         <Flex flex={{ base: 1 }} justify="start">
           <Image

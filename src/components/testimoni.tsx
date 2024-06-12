@@ -74,11 +74,11 @@ const Testimoni: React.FC = () => {
               />
 
               <Box>
-                <Text fontSize={{ base: 'lg' }} mb={4}>
+                <Text fontSize={{ base: 'md', md: 'lg' }} mb={4}>
                   {item.say}
                 </Text>
 
-                <Text fontSize={{ base: 'lg' }} fontWeight={'bold'}>
+                <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight={'bold'}>
                   {' '}
                   - {item.name}
                 </Text>

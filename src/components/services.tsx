@@ -169,7 +169,7 @@ const Services: React.FC = () => {
         <Text
           zIndex={1}
           textAlign="center"
-          fontSize={'5xl'}
+          fontSize={{ base: 'lg', md: '5xl' }}
           fontWeight={'bold'}
         >
           Butuh layanan segera? <br /> Klik di sini untuk menghubungi kami!

@@ -5,12 +5,11 @@ import {
   Box,
   Flex,
   Icon,
-  Button,
   Heading,
-  Image,
   Divider,
   Text,
   Grid,
+  Card,
 } from '@chakra-ui/react';
 import { FaQuoteLeft, FaStar } from 'react-icons/fa';
 
@@ -61,9 +60,9 @@ const Testimoni: React.FC = () => {
         Testimoni
       </Heading>
       <Divider mb={12} />
-      <Grid templateColumns={'repeat(2, 1fr)'} gap={6}>
+      <Grid templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }} gap={6}>
         {datacontent.map((item, index) => (
-          <Box key={index} bg={'gray.100'} p={6} rounded={'lg'}>
+          <Card variant={'outline'} key={index} p={6}>
             <Flex gap={{ base: 4, md: 6 }}>
               <Icon
                 p={2}
@@ -86,7 +85,7 @@ const Testimoni: React.FC = () => {
                 <ComponentStar />
               </Box>
             </Flex>
-          </Box>
+          </Card>
         ))}
       </Grid>
     </Box>

@@ -68,8 +68,12 @@ const SocialMedia = () => {
 const Footer: React.FC = () => {
   return (
     <>
-      <Center p={6} mt={300} flexDirection={'column'} gap={6}>
-        <Grid w={'full'} templateColumns={'repeat(2,1fr)'} gap={16}>
+      <Center p={6} pt={120} flexDirection={'column'} gap={6}>
+        <Grid
+          w={'full'}
+          templateColumns={{ base: '1fr', md: 'repeat(2,1fr)' }}
+          gap={16}
+        >
           <Box>
             <Image
               flex={1}

@@ -11,17 +11,9 @@ import {
   Icon,
   Flex,
   Center,
-  Spacer,
   As,
-  IconButton,
 } from '@chakra-ui/react';
-import {
-  FaArrowRight,
-  FaCheck,
-  FaDiceD20,
-  FaSink,
-  FaWrench,
-} from 'react-icons/fa';
+import { FaCheck, FaDiceD20, FaSink, FaWrench } from 'react-icons/fa';
 const datacontent = [
   {
     icon: FaSink,
@@ -162,19 +154,26 @@ const Services: React.FC = () => {
           right={-20}
           top={-40}
           color={'secondary.100'}
+          zIndex={0}
         />
         <Icon
           as={FaDiceD20}
           fontSize={300}
           position={'absolute'}
           left={-150}
+          zIndex={0}
           bottom={'-175px'}
           color={'brand.100'}
         />
-        <Text textAlign="center" fontSize={'2xl'} fontWeight={'bold'}>
+        <Text
+          zIndex={1}
+          textAlign="center"
+          fontSize={'5xl'}
+          fontWeight={'bold'}
+        >
           Butuh layanan segera? <br /> Klik di sini untuk menghubungi kami!
         </Text>
-        <Button> Hubungi Kami </Button>
+        <Button size={'lg'}> Hubungi Kami </Button>
       </Center>
     </Box>
   );

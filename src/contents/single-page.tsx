@@ -9,7 +9,6 @@ import Footer from '@/components/footer';
 import QR from '@/components/qr';
 import Map from '@/components/map';
 import Testimoni from '@/components/testimoni';
-import Legalitas from '@/components/legalitas';
 
 const BlueBackground = ({ children }: { children: React.ReactNode }) => (
   <Box mt={100} bg="brand.500" color={'white'}>
@@ -40,19 +39,16 @@ export default function Home() {
         <Testimoni />
       </Container>
 
-      <Divider />
-
-      {/* GALLERY */}
-      <Container maxW="container.lg">
-        <Gallery />
-      </Container>
-
-      <Divider />
+      <Divider mb={20} />
 
       <Container maxW="container.lg">
         <Map />
       </Container>
-
+      <Divider />
+      {/* GALLERY */}
+      <Container maxW="container.lg">
+        <Gallery />
+      </Container>
       {/* Footer*/}
       <BlueBackground>
         <Container maxW="container.lg">

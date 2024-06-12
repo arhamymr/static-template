@@ -8,18 +8,18 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export const images = [
-  '/assets/gallery/galeri1.png',
-  '/assets/gallery/galeri2.png',
-  '/assets/gallery/galeri3.png',
-  '/assets/gallery/galeri4.png',
-  '/assets/gallery/galeri5.png',
-  '/assets/gallery/galeri6.png',
-  '/assets/gallery/galeri7.png',
-  '/assets/gallery/galeri8.png',
-  '/assets/gallery/galeri9.png',
-  '/assets/gallery/galeri10.png',
-  '/assets/gallery/galeri11.png',
-  '/assets/gallery/galeri12.png',
+  '/img/foto1.jpeg',
+  '/img/foto2.jpeg',
+  '/img/foto3.jpeg',
+  '/img/foto4.jpeg',
+  '/img/foto5.jpeg',
+  '/img/foto6.jpeg',
+  '/img/foto7.jpeg',
+  '/img/foto8.jpeg',
+  '/img/foto9.jpeg',
+  '/img/foto10.jpeg',
+  '/img/foto11.jpeg',
+  '/img/foto12.jpeg',
 ];
 
 export default function Gallery() {
@@ -61,7 +61,7 @@ export default function Gallery() {
   return (
     <Box my={100} id="galeri">
       <Heading as="h2" size="2xl" color={'brand.500'} mb={12}>
-        Gallery
+        Foto Kegiatan
       </Heading>
 
       <Slider {...settings}>

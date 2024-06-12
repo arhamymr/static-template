@@ -14,6 +14,7 @@ import {
   As,
 } from '@chakra-ui/react';
 import { FaCheck, FaDiceD20, FaSink, FaWrench } from 'react-icons/fa';
+import ContactUsButton from './contact-us-button';
 const datacontent = [
   {
     icon: FaSink,
@@ -105,7 +106,7 @@ const Item = ({
 
 const Services: React.FC = () => {
   return (
-    <Box mt={100} id="layanan">
+    <Box mt={100} id="services">
       <Center>
         <Heading
           textAlign={'center'}
@@ -173,7 +174,7 @@ const Services: React.FC = () => {
         >
           Butuh layanan segera? <br /> Klik di sini untuk menghubungi kami!
         </Text>
-        <Button size={'lg'}> Hubungi Kami </Button>
+        <ContactUsButton />
       </Center>
     </Box>
   );

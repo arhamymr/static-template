@@ -23,7 +23,7 @@ const MapEmbed = ({ location }: { location: string }) => {
 
 const Map = () => {
   const embed =
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.9855451689123!2d119.5061572389029!3d-5.10602944041297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefbf2ca8e3ba3%3A0x70d6b5cab4ff8174!2sJl.%20Perintis%20Kemerdekaan%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1718105238710!5m2!1sid!2sid';
+    'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3973.748122070747!2d119.4817699!3d-5.1441967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee36fa21c991f%3A0x2e0a0d3b1009be87!2sTukang%20Sedot%20Buntu!5e0!3m2!1sid!2sid!4v1718168563125!5m2!1sid!2sid';
 
   return (
     <Box>

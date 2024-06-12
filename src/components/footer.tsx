@@ -46,14 +46,11 @@ const SocialMedia = () => {
         {' '}
         <Icon fontSize={'3xl'} as={FaFacebookSquare} />
       </a>
-      <a
-        href="https://www.instagram.com/anugrah_cctv_indonesia"
-        target="_blank"
-      >
+      <a href="https://www.instagram.com/WMS_OFFICIAL" target="_blank">
         <Icon fontSize={'3xl'} as={FaInstagram} />
       </a>
       <a
-        href="https://api.whatsapp.com/send?phone=6285317831333&text=Halo%20kak,%20mau%20tanya-tanya%20tentang%20Anugrah%20Computer"
+        href="https://api.whatsapp.com/send?phone=6282188864803"
         target="_blank"
       >
         <Icon fontSize={'3xl'} as={FaWhatsapp} />

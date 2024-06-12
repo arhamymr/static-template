@@ -47,7 +47,7 @@ const datacontent = [
 ];
 const VisiMisi: React.FC = () => {
   return (
-    <Box p={{ base: 4, md: 16 }} color="secondary.500">
+    <Box id="visimisi" p={{ base: 4, md: 16 }} color="secondary.500">
       {datacontent.map((item, index) => (
         <Flex gap={8} key={index} flexDirection={{ base: 'column', md: 'row' }}>
           <Icon as={FaCheck} fontSize={34} mt={2} />

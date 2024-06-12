@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Providers } from './providers';
 import Navbar from '@/components/navbar';
+import './style.css';
 
 export const metadata: Metadata = {
   title: 'Wastewater Management Service',
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
         <Providers>

@@ -14,6 +14,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from '@chakra-ui/icons';
+import ContactUsButton from './contact-us-button';
 
 function Navigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -63,7 +64,7 @@ function Navigation() {
           direction={'row'}
           spacing={6}
         >
-          <Button>Hubungi Kami</Button>
+          <ContactUsButton />
         </Stack>
       </Flex>
 

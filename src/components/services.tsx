@@ -6,7 +6,6 @@ import {
   Card,
   Box,
   Text,
-  Button,
   Grid,
   Icon,
   Flex,
@@ -61,10 +60,7 @@ const Item = ({
   content: ReactNode[];
   icon: As;
 }) => (
-  <a
-    href={`https://api.whatsapp.com/send?phone=6285317831333&text=Halo%20kak,%20mau%20tanya-tanya%20tentang%20${title}`}
-    target="_blank"
-  >
+  <a href={`https://api.whatsapp.com/send?phone=628115558803`} target="_blank">
     <Card
       variant={'outline'}
       _hover={{ bg: 'secondary.100' }}

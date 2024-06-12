@@ -25,8 +25,8 @@ function Navigation() {
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
-        py={{ base: 4 }}
-        px={{ base: 8 }}
+        py={{ base: 1, md: 4 }}
+        px={{ base: 2, md: 8 }}
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}

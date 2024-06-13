@@ -40,13 +40,13 @@ const SocialMedia = () => {
   return (
     <Flex gap={6}>
       <a
-        href="https://web.facebook.com/profile.php?id=61560700800200"
+        href="https://www.facebook.com/profile.php?id=61560700800200"
         target="_blank"
       >
         {' '}
         <Icon fontSize={'3xl'} as={FaFacebookSquare} />
       </a>
-      <a href="https://www.instagram.com/WMS_OFFICIAL" target="_blank">
+      <a href="https://www.instagram.com/wms_official1" target="_blank">
         <Icon fontSize={'3xl'} as={FaInstagram} />
       </a>
       <a
